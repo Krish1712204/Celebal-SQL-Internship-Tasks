@@ -33,7 +33,7 @@ Tasks focused on foundational SQL concepts like:
 
 ### 🔹 Week 2 - Built-In Functions, Procedures, Views & Triggers
 
-This week focuses on advanced SQL concepts using the **AdventureWorks** database, including built-in functions, user-defined functions, stored procedures, views, and triggers.
+This week focuses on advanced SQL concepts using the **AdventureWorks2022** database, including built-in functions, user-defined functions, stored procedures, views, and triggers.
 
 #### 📚 Key Topics:
 
