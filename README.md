@@ -52,7 +52,7 @@ This week focuses on advanced SQL concepts using the **AdventureWorks** database
 
 1. Clone this repository or download it as a ZIP.  
 2. Open `.sql` files using SQL Server Management Studio (SSMS) or Azure Data Studio.  
-3. Execute the queries on the **AdventureWorks** database.  
+3. Execute the queries on the **Adventure works2022** database.  
 4. Files are named and commented for clarity.
 
 ---
