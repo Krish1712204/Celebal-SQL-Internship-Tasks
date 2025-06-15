@@ -1,88 +1,95 @@
-#📚 Week 2 - Built-In Functions, Stored Procedures, Views, and Triggers
+# 📚 Week 2 - Built-In Functions, Stored Procedures, Views, and Triggers
 
-Welcome to Week 2 of the SQL Internship at Celebal Technologies!  
-This week covers advanced SQL features such as built-in functions, user-defined functions, stored procedures, views, and triggers using the AdventureWorks database.
-
----
-
-### 📘 Topics Covered
-
-- ✅ Built-in String Functions  
-- ✅ DateTime Functions  
-- ✅ Cast and Convert Functions  
-- ✅ Mathematical Functions  
-- ✅ User Defined Functions (UDF) – Scalar Functions  
-- ✅ Views in SQL Server  
-- ✅ Updatable Views  
-- ✅ Indexed Views  
-- ✅ View Limitations  
-- ✅ Stored Procedures  
-- ✅ Triggers  
+Welcome to **Week 2** of the SQL Internship at Celebal Technologies!  
+This week covers advanced SQL features such as built-in functions, user-defined functions, stored procedures, views, and triggers using the **AdventureWorks2022** database.
 
 ---
 
-### 📂 Assignment - Level B Task
+## 🧠 Topics Covered
 
-Below is the list of tasks to be completed using the AdventureWorks database:
+- Built-in String Functions  
+- DateTime Functions  
+- Cast and Convert Functions  
+- Mathematical Functions  
+- User Defined Functions (UDF) – Scalar Functions  
+- Views in SQL Server  
+- Updatable Views  
+- Indexed Views  
+- View Limitations  
+- Stored Procedures  
+- Triggers  
 
-#### 🔁 Stored Procedures
+---
 
-1. **InsertOrderDetails**:  
-   - Inserts order details with parameters like OrderID, ProductID, UnitPrice, Quantity, and Discount.  
-   - Makes UnitPrice and Discount optional.  
-   - Uses default values if not provided.  
-   - Updates inventory accordingly.  
-   - Aborts if insufficient stock.  
-   - Notifies when stock drops below reorder level.
+## 📝 Assignment - Level B Task
 
-2. **UpdateOrderDetails**:  
-   - Updates values in Order Details.  
-   - All parameters except OrderID and ProductID are optional.  
-   - Retains original values using `ISNULL()` if any field is `NULL`.  
-   - Adjusts UnitsInStock accordingly.
+Tasks are to be implemented using the **AdventureWorks2022** database. The assignment consists of Stored Procedures, Functions, Views, and Triggers.
 
-3. **GetOrderDetails**:  
-   - Takes OrderID as input and fetches details.  
-   - If no record found, prints:  
+---
+
+### 🔁 Stored Procedures
+
+1. **InsertOrderDetails**  
+   - Inserts order details with parameters: OrderID, ProductID, UnitPrice, Quantity, and Discount  
+   - UnitPrice and Discount are optional (defaulted if not passed)  
+   - Updates inventory accordingly  
+   - Aborts if insufficient stock  
+   - Notifies if stock drops below reorder level  
+
+2. **UpdateOrderDetails**  
+   - Updates Order Details values  
+   - Parameters except OrderID and ProductID are optional  
+   - Uses `ISNULL()` to retain original values if NULL is passed  
+   - Adjusts stock accordingly  
+
+3. **GetOrderDetails**  
+   - Input: OrderID  
+   - Fetches order details  
+   - Prints message if OrderID not found:  
      `The OrderID XXXX does not exist.`  
-   - Returns value `1` if not found.
+   - Returns 1 if not found  
 
-4. **DeleteOrderDetails**:  
-   - Takes OrderID and ProductID as input.  
-   - Deletes order after validating parameters.  
-   - Returns `-1` and prints error if invalid.
-
----
-
-#### 🧮 Functions
-
-1. Create a function that takes a `datetime` input and returns the date in `MM/DD/YYYY` format.  
-2. Create a function that takes a `datetime` input and returns the date in `YYYYMMDD` format.  
-*(Use: [SQL Server Date Formats](http://www.sql-server-helper.com/tips/date-formats.aspx))*
+4. **DeleteOrderDetails**  
+   - Input: OrderID and ProductID  
+   - Validates parameters  
+   - Deletes entry if valid  
+   - Returns -1 and prints an error message if invalid  
 
 ---
 
-#### 👁️ Views
+### 🧮 Functions
 
-1. `vwCustomerOrders`:
-   - Displays CompanyName, OrderID, OrderDate, ProductID, ProductName, Quantity, UnitPrice, Quantity × UnitPrice.
+1. Function to return `MM/DD/YYYY` format from a `datetime` input  
+2. Function to return `YYYYMMDD` format from a `datetime` input  
+> 💡 Use reference: [SQL Server Date Formats](http://www.sql-server-helper.com/tips/date-formats.aspx)
 
-2. Modified `vwCustomerOrders`:  
-   - Same as above, but filtered for orders placed **yesterday**.
+---
 
-3. `MyProducts`:  
-   - Shows ProductID, ProductName, QuantityPerUnit, UnitPrice from `Products`  
+### 👁️ Views
+
+1. **vwCustomerOrders**  
+   - Displays: CompanyName, OrderID, OrderDate, ProductID, ProductName, Quantity, UnitPrice, Total = Quantity × UnitPrice  
+
+2. **vwCustomerOrders (Filtered)**  
+   - Same as above, but shows only **yesterday's orders**  
+
+3. **MyProducts**  
+   - Shows: ProductID, ProductName, QuantityPerUnit, UnitPrice  
    - Joins `Suppliers` for CompanyName and `Categories` for CategoryName  
-   - Only includes non-discontinued products.
+   - Only non-discontinued products  
 
 ---
 
-#### 🧨 Triggers
+### 🧨 Triggers
 
-1. **Instead of DELETE Trigger on Orders Table**:  
-   - When an order is canceled, deletes associated OrderDetails before deleting the order.
+1. **Instead Of DELETE Trigger** (on Orders Table)  
+   - Deletes OrderDetails before deleting an Order  
 
-2. **BEFORE INSERT Trigger on OrderDetails**:  
-   - Checks if sufficient stock is available.  
-   - Rejects insertion and alerts user if stock is insufficient.  
-   - If sufficient, reduces stock.
+2. **BEFORE INSERT Trigger** (on OrderDetails Table)  
+   - Checks for sufficient stock  
+   - Rejects insert with a message if stock is insufficient  
+   - Reduces stock if sufficient  
+
+---
+
+✅ Make sure to test all procedures, functions, and triggers using the **AdventureWorks2022** database.
