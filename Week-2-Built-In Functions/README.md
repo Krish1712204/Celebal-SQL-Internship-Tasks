@@ -1,4 +1,4 @@
-# Week 2 - Built-In Functions, Stored Procedures, Views, and Triggers
+#📚 Week 2 - Built-In Functions, Stored Procedures, Views, and Triggers
 
 Welcome to Week 2 of the SQL Internship at Celebal Technologies!  
 This week covers advanced SQL features such as built-in functions, user-defined functions, stored procedures, views, and triggers using the AdventureWorks database.
