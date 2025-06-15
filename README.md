@@ -31,6 +31,23 @@ Tasks focused on foundational SQL concepts like:
 
 ---
 
+### 🔹 Week 2 - Built-In Functions, Procedures, Views & Triggers
+
+This week focuses on advanced SQL concepts using the **AdventureWorks** database, including built-in functions, user-defined functions, stored procedures, views, and triggers.
+
+#### 📚 Key Topics:
+
+- Built-in String, DateTime, Math, Cast/Convert Functions  
+- User Defined Functions (UDFs)  
+- Views (Standard, Updatable, Indexed, with Limitations)  
+- Stored Procedures for Insert, Update, Delete, Fetch Operations  
+- Triggers for Referential Integrity and Inventory Management  
+
+📁 **Folder:** `Week-2-BuiltIn-Functions/`  
+📄 **Assignment:** `Level B Task Solutions`
+
+---
+
 ## 🚀 How to Use
 
 1. Clone this repository or download it as a ZIP.  
