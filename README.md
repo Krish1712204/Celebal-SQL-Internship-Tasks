@@ -48,10 +48,31 @@ This week focuses on advanced SQL concepts using the **AdventureWorks2022** data
 
 ---
 
+### 🔹 Week 3 - Indexes, Stored Procedures & Subqueries
+
+This week dives into **performance optimization** and **modular SQL programming** through indexes, stored procedures, and subqueries.
+
+#### 📚 Key Topics:
+
+- Temporary Tables  
+- Indexes (Part 1 & 2)  
+- Unique vs Non-Unique Indexes  
+- Pros and Cons of Indexes  
+- Stored Procedures  
+- Stored Procedures with Output Parameters (Part 1 & 2)  
+- Advantages of Stored Procedures  
+- Subqueries & Correlated Subqueries  
+- Performance Comparison: Subquery vs Join  
+
+📁 **Folder:** `Week-3-Indexes/`  
+📄 **Assignment:** `Level C Task Solutions`
+
+---
+
 ## 🚀 How to Use
 
 1. Clone this repository or download it as a ZIP.  
-2. Open `.sql` files using SQL Server Management Studio (SSMS) or Azure Data Studio.  
+2. Open `.sql` files using SQL Server Management Studio (SSMS) or Mysql WorkBench 8.0
 3. Execute the queries on the **Adventure works2022** database.  
 4. Files are named and commented for clarity.
 
