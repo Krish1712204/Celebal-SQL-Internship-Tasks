@@ -52,7 +52,7 @@ When a student requests a subject change, the current active subject must be inv
   → Insert new record with Is_valid = 1
 - If the student is **not found in SubjectAllotments** → Insert the new record with Is_valid = 1
 
----
+--- 
 
 ### 🛠 Stored Procedure: HandleSubjectRequests
 
