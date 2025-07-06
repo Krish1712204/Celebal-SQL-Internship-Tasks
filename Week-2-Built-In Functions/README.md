@@ -10,7 +10,7 @@ This week covers advanced SQL features such as built-in functions, user-defined 
 - Built-in String Functions  
 - DateTime Functions  
 - Cast and Convert Functions  
-- Mathematical Functions  
+- Mathematical Functions 
 - User Defined Functions (UDF) – Scalar Functions  
 - Views in SQL Server  
 - Updatable Views  
