@@ -68,7 +68,39 @@ This week dives into **performance optimization** and **modular SQL programming*
 📄 **Assignment:** `Level C Task Solutions`
 
 ---
+### 🔹 Week 4 - Triggers & Student Allotment Logic
 
+This week focuses on **DML triggers** and their practical use cases, including conditional logic during `INSERT`, `UPDATE`, and `DELETE` operations. The week concludes with a subject allotment assignment based on GPA and preference order.
+
+#### 📚 Key Topics:
+
+- DML Triggers  
+- AFTER UPDATE Trigger  
+- INSTEAD OF INSERT Trigger  
+- INSTEAD OF UPDATE Trigger  
+- INSTEAD OF DELETE Trigger  
+
+📁 **Folder:** `Week-4-Triggers/`  
+📄 **Assignment:** `Student Allotment SQL Problem`  
+📝 **Summary:** Students are allotted elective subjects based on their GPA and preference priority. A stored procedure processes preferences in order and marks unallotted students if no seat is available.
+
+---
+
+### 🔹 Week 5 - Common Table Expressions (CTE)
+
+This week covers **Common Table Expressions (CTE)** and their use in modular query writing. Topics include recursive CTEs, updatable CTEs, and using them in practical scenarios. The assignment implements a subject change request tracker using stored procedures.
+
+#### 📚 Key Topics:
+
+- Common Table Expressions (CTE) – Part 1 & 2  
+- Updatable CTEs  
+- Recursive CTE  
+
+📁 **Folder:** `Week-5-CTE/`  
+📄 **Assignment:** `Subject Change Request Problem`  
+📝 **Summary:** A stored procedure checks if the student's requested subject is different from the currently active subject. It updates the current subject’s status and inserts the new one as valid, preserving the history of allotments.
+
+---
 ## 🚀 How to Use
 
 1. Clone this repository or download it as a ZIP.  
