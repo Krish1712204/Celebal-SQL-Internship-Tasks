@@ -101,6 +101,32 @@ This week covers **Common Table Expressions (CTE)** and their use in modular que
 📝 **Summary:** A stored procedure checks if the student's requested subject is different from the currently active subject. It updates the current subject’s status and inserts the new one as valid, preserving the history of allotments.
 
 ---
+
+### 🔹 Week 6 - Pivot, Error Handling, Transactions & LeetCode Problems
+
+This week introduces **data reshaping**, **robust error handling**, and **transaction management** in SQL Server. It also includes **LeetCode-style SQL problems** that help apply concepts in real-world scenarios.
+
+#### 📚 Key Topics:
+
+- `PIVOT` – Transform rows into columns  
+- `UNPIVOT` – Transform columns back into rows  
+- Error Handling using `TRY...CATCH` blocks  
+  - Error Handling – Part 1: Handling syntax/logical errors  
+  - Error Handling – Part 2: Custom error messages, nested try-catch  
+- Transactions & ACID Properties  
+- `MERGE` Statement – Conditional `INSERT`, `UPDATE`, or `DELETE`  
+- **Window Functions**:  
+  - `ROW_NUMBER()`  
+  - `RANK()`  
+  - `DENSE_RANK()`  
+  - `NTILE()`  
+- LeetCode SQL Problems (Performance-focused)
+
+📁 **Folder:** `Week-6-Pivot/`  
+📄 **Assignment:** `Perform  Leetcode Questions`
+
+---
+
 ## 🚀 How to Use
 
 1. Clone this repository or download it as a ZIP.  
