@@ -1,27 +1,38 @@
-### 🔹 Week 6 - Pivot, Error Handling, Transactions & LeetCode Problems
+# 📚 Week 6 - Pivot, Error Handling, Transactions & LeetCode Problems
 
-This week introduces **data reshaping**, **robust error handling**, and **transaction management** in SQL Server. It also includes **LeetCode-style SQL problems** that help apply concepts in real-world scenarios.
+Welcome to *Week 6* of the SQL Internship at *Celebal Technologies*!  
+This week focuses on mastering advanced SQL operations such as **data transformation**, **transaction control**, and **error handling**, along with solving **LeetCode-style SQL problems** to strengthen your problem-solving skills and performance optimization.
 
-#### 📚 Key Topics:
+---
 
-- `PIVOT` – Transform rows into columns  
-- `UNPIVOT` – Transform columns back into rows  
-- Error Handling using `TRY...CATCH` blocks  
-  - Error Handling – Part 1: Handling syntax/logical errors  
-  - Error Handling – Part 2: Custom error messages, nested try-catch  
-- Transactions & ACID Properties  
-- `MERGE` Statement – Conditional `INSERT`, `UPDATE`, or `DELETE`  
-- **Window Functions**:  
+## 🧠 Topics Covered
+
+- Data Reshaping using `PIVOT` and `UNPIVOT`  
+- Error Handling with `TRY...CATCH` blocks  
+- Transaction Management and ACID Properties  
+- `MERGE` Statements for Conditional Logic  
+- Window Functions:  
   - `ROW_NUMBER()`  
   - `RANK()`  
   - `DENSE_RANK()`  
   - `NTILE()`  
-- LeetCode SQL Problems (Performance-focused)
-
-📁 **Folder:** `Week-6-Pivot-ErrorHandling/`  
-📄 **Assignment:** `Advanced SQL Operations + LeetCode Practice`
-
-📝 **Summary:**  
-This week's assignments focus on writing modular, error-resilient SQL scripts using PIVOT/UNPIVOT for data transformation, TRY...CATCH blocks for graceful error handling, and transactions to preserve data consistency. The MERGE operation is explored for conditional data updates. The week ends with solving SQL interview-level problems inspired by LeetCode to improve query optimization and problem-solving skills.
+- LeetCode SQL Practice Problems
 
 ---
+
+
+### 🎯 Problem Statement
+
+This week's assignment includes multiple tasks across data transformation, error handling, and query optimization. Each problem is designed to simulate **real-world business logic**, focusing on writing efficient, modular SQL code.
+
+---
+
+### 📌 Tasks Implemented
+
+📝 Assignment - Perform Leetcode Questions
+---
+
+📁 **Folder:** `Week-6-Pivot-ErrorHandling/`  
+📄 **Assignment File:** `Advanced SQL Operations + LeetCode Practice.sql`
+
+
