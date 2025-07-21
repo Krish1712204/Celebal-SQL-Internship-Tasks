@@ -25,7 +25,7 @@ This week's practical assignment focuses on implementing various **Slowly Changi
 ---
 
 📁 **Folder:** `Week-7-Star and Snowflake Schema/`  
-📄 **Assignment File:** `SCD Types.sql`
+📄 **Assignment File:** `SCD_Types.sql`
 
 ### 🛠️ Tasks
 
