@@ -26,7 +26,7 @@ CREATE TABLE stg_customer (
 );
 
 
--- SCD Type 0 — No changes allowed
+-- SCD Type 0 â€” No changes allowed
 
 CREATE PROCEDURE sp_scd_type_0
 AS
@@ -41,7 +41,7 @@ END
 
 
 
--- SCD Type 1 — Overwrite old data
+-- SCD Type 1 â€” Overwrite old data
 
 CREATE PROCEDURE sp_scd_type_1
 AS
@@ -61,7 +61,7 @@ END
 
 
 
--- SCD Type 2 — Historical tracking using new row
+-- SCD Type 2 â€” Historical tracking using new row
 
 CREATE PROCEDURE sp_scd_type_2
 AS
@@ -92,7 +92,7 @@ END
 
 
 
---SCD Type 3 — Limited history (1 previous value)
+--SCD Type 3 â€” Limited history (1 previous value)
 
 -- Source table
 CREATE TABLE dbo.customer_source (
@@ -119,7 +119,7 @@ VALUES (1, 'Krishna', 'Mumbai', NULL);
 
 
 
---SCD Type 3 — Limited history (1 previous value)
+--SCD Type 3 â€” Limited history (1 previous value)
 CREATE OR ALTER PROCEDURE sp_scd_type_3
 AS
 BEGIN
@@ -142,7 +142,7 @@ END;
 
 
 
---SCD Type 4 — Current + Historical Table
+--SCD Type 4 â€” Current + Historical Table
 
 -- Historical Table
 CREATE TABLE dim_customer_history (
@@ -182,7 +182,7 @@ BEGIN
 END
 
 
---SCD Type 6 — Combo of Type 1, 2, 3 (aka Hybrid)
+--SCD Type 6 â€” Combo of Type 1, 2, 3 (aka Hybrid)
 
 CREATE PROCEDURE sp_scd_type_6
 AS
@@ -217,5 +217,6 @@ BEGIN
 END
 
 
-
+    
+--To run Each Procedure  
 EXEC sp_scd_type_1; -- Replace 1 with 0, 2, 3, 4, or 6 accordingly
